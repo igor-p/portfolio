@@ -49,7 +49,7 @@ export default function RootLayout({
           <TooltipProvider>
             <div className="min-h-screen bg-background flex flex-col">
               <Header />
-              <main className="container m-auto flex-1 px-4 md:px-6 scroll-mt-6 ">
+              <main className="container m-auto flex-1 my-14 px-4 md:px-6 scroll-mt-6 ">
                 {children}
               </main>
               <Footer />

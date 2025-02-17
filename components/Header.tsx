@@ -6,16 +6,16 @@ import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
-    <header className="px-4 md:px-6 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="px-4 sm:px-6 fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-14 items-center justify-between">
-        <div className="mr-4 hidden md:flex">
+        <div className="mr-4 sm:flex">
           <Link className="mr-6 flex items-center font-bold gap-2" href="/">
             <Avatar className="size-10">
               <AvatarImage src="/images/avatar-jcd.jpg" alt="Avatar" />
             </Avatar>
             Igor.nyc
           </Link>
-          <nav className="flex items-center gap-6 text-sm font-medium">
+          <nav className="hidden sm:flex items-center gap-6 text-sm font-medium">
             <Link href="#about" className={linkStyles}>
               About
             </Link>
