@@ -38,7 +38,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className={textContentStyles}>{project.fullTextContent}</div>
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag) => (
-            <Badge key={tag} variant="outline">{tag}</Badge>
+            <Badge key={tag} variant="outline">
+              {tag}
+            </Badge>
           ))}
         </div>
         {project.link && <ProjectLink link={project.link} />}

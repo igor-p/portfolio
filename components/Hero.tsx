@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { Mail } from "lucide-react"
 
@@ -16,21 +16,21 @@ import {
   URL_TELEGRAM,
   URL_X,
 } from "@/content/links"
+import { useToast } from "@/hooks/use-toast"
 import IconGithub from "@/icons/IconGitHub.svg"
 import IconLinkedIn from "@/icons/IconLinkedIn.svg"
 import IconTelegram from "@/icons/IconTelegram.svg"
 import IconX from "@/icons/IconX.svg"
-import { useToast } from "@/hooks/use-toast";
 
 export function Hero() {
-  const { toast } = useToast();
+  const { toast } = useToast()
 
   const copyEmail = async () => {
-    await navigator.clipboard.writeText(EMAIL);
+    await navigator.clipboard.writeText(EMAIL)
     toast({
-      description: `Copied ${EMAIL} to clipboard`
+      description: `Copied ${EMAIL} to clipboard`,
     })
-  };
+  }
 
   return (
     <div className="container px-4 md:px-6">
@@ -58,11 +58,7 @@ export function Hero() {
           {EMAIL && (
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="icon"
-                  onClick={copyEmail}
-                >
+                <Button variant="outline" size="icon" onClick={copyEmail}>
                   <Mail className="h-4 w-4" />
                   <span className="sr-only">"Email</span>
                 </Button>

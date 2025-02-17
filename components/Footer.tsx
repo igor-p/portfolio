@@ -1,17 +1,9 @@
-import Link from "next/link";
+import Link from "next/link"
 
-
-
-import { URL_GITHUB } from "@/content/links";
+import { URL_GITHUB } from "@/content/links"
 import IconGithub from "@/icons/IconGitHub.svg"
 
-
-
-import { IconLink } from "./IconLink";
-
-
-
-
+import { IconLink } from "./IconLink"
 
 export function Footer() {
   return (
@@ -21,7 +13,12 @@ export function Footer() {
           © 2025 Igor.nyc. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <IconLink name="GitHub" url={URL_GITHUB} Icon={IconGithub} variant="ghost" />
+          <IconLink
+            name="GitHub"
+            url={URL_GITHUB}
+            Icon={IconGithub}
+            variant="ghost"
+          />
         </nav>
       </div>
     </footer>

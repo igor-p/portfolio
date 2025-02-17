@@ -1,23 +1,15 @@
-import type { Metadata } from "next/";
-import { Geist, Geist_Mono } from "next/font/google";
-import type React from "react";
+import type { Metadata } from "next/"
+import { Geist, Geist_Mono } from "next/font/google"
+import type React from "react"
 
-
-
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
+import { ThemeProvider } from "@/components/ThemeProvider"
+import { Toaster } from "@/components/ui/toaster"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
-
-
-import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-
-
-
-
+import "./globals.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

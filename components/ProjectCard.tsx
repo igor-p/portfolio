@@ -2,13 +2,13 @@ import { Github, Link as LinkIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+import { Project } from "@/app/types"
+import ProjectLink from "@/components/ProjectLink"
+import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Project } from "@/app/types";
-import ProjectLink from "@/components/ProjectLink";
-import { Badge } from "@/components/ui/badge";
 
 export interface ProjectCardProps {
-  data: Project;
+  data: Project
 }
 export default function ProjectCard({ data }: ProjectCardProps) {
   const projectHref = `/projects/${data.id}`
@@ -39,9 +39,7 @@ export default function ProjectCard({ data }: ProjectCardProps) {
         </div>
       </CardContent>
       <CardFooter className="p-4 pt-0">
-        {data.link && (
-          <ProjectLink link={data.link} />
-        )}
+        {data.link && <ProjectLink link={data.link} />}
       </CardFooter>
     </Card>
   )
