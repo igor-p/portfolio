@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 import { ThemeToggle } from "@/components/ThemeToggle"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 
 export function Header() {

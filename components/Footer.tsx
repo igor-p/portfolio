@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 import { URL_GITHUB } from "@/content/links"
 import IconGithub from "@/icons/IconGitHub.svg"
 

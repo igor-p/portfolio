@@ -1,4 +1,3 @@
-import { Github } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
@@ -6,7 +5,6 @@ import React from "react"
 
 import ProjectLink from "@/components/ProjectLink"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { PROJECTS } from "@/content/projects"
 import { cn } from "@/lib/utils"

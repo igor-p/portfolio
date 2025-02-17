@@ -60,10 +60,10 @@ export function Hero() {
               <TooltipTrigger asChild>
                 <Button variant="outline" size="icon" onClick={copyEmail}>
                   <Mail className="h-4 w-4" />
-                  <span className="sr-only">"Email</span>
+                  <span className="sr-only">Email</span>
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>Copy "{EMAIL}" to clipboard</TooltipContent>
+              <TooltipContent>Copy {EMAIL} to clipboard</TooltipContent>
             </Tooltip>
           )}
         </div>
